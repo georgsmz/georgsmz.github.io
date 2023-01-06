@@ -21,7 +21,7 @@
 title: My personal blog
 email: test
 
-{{content}} Hallo, wie gehts
+content: Hallo, wie gehts
 
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
