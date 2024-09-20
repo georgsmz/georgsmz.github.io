@@ -18,7 +18,7 @@ body {
     font-weight: normal;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    text-align: center;
+    text-align: center; /* Kommentar: Zentrierung für bestimmte Überschriften hinzugefügt */
 }
 
 .centered-textarea {
@@ -29,52 +29,83 @@ body {
     max-width: 600px;
 } /* Kommentar: Stil für zentriertes Textfeld hinzugefügt */
 
-body {
-    background-color: #dad9d9; /* Kommentar: Hintergrundfarbe der Website geändert */
+.image-placeholders, .video-placeholders {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Kommentar: Abstand zwischen Platzhaltern hinzugefügt */
+    margin-bottom: 20px;
+} /* Kommentar: Container für Bild- und Videoplatzhalter hinzugefügt */
+
+.image-placeholder, .video-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+} /* Kommentar: Stil für Bild- und Videoplatzhalter hinzugefügt */
+
+.placeholder-link {
+    text-decoration: none;
+    color: inherit;
+} /* Kommentar: Stil für Platzhalter-Links hinzugefügt */
+
+.social-images {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
 }
 
-.centered-title {
-    text-align: center; /* Kommentar: Zentrierung für bestimmte Überschriften hinzugefügt */
-    font-size: 2rem; /* Kommentar: Schriftgröße auf 2rem geändert */
-    font-weight: normal; /* Kommentar: Bold-Eigenschaft entfernt */
+.social-images a {
+    display: inline-block;
 }
 
-.brand-name {
-    font-size: 1.1em; /* Kommentar: Größe um 1 Einheit erhöht */
+.social-images img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
 }
 
-.section-title {
-    font-family: 'Epilogue'; /* Kommentar: Schriftart auf Epilogue geändert */
-    font-size: 1.5rem; /* Kommentar: Schriftgröße auf 1.5rem geändert */
-    font-weight: bold; /* Kommentar: Bold-Eigenschaft hinzugefügt */
-    text-align: center; /* Kommentar: Zentrierung hinzugefügt */
+form {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-.image-placeholder {
-    width: 100px; /* Kommentar: Breite auf 100px geändert */
-    height: 100px; /* Kommentar: Höhe auf 100px geändert */
-    background-color: #ccc; /* Kommentar: Hintergrundfarbe auf #ccc geändert */
-    border: 1px solid #ddd; /* Kommentar: Rand auf 1px solid #ddd geändert */
+.form-group {
+    margin-bottom: 1rem;
 }
 
-.video-placeholder {
-    width: 150px; /* Kommentar: Breite auf 150px geändert */
-    height: 100px; /* Kommentar: Höhe auf 100px geändert */
-    background-color: #ccc; /* Kommentar: Hintergrundfarbe auf #ccc geändert */
-    border: 1px solid #ddd; /* Kommentar: Rand auf 1px solid #ddd geändert */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    color: #333;
 }
 
-.cta-button {
-    background-color: #4CAF50; /* Kommentar: Hintergrundfarbe auf #4CAF50 geändert */
-    color: #fff; /* Kommentar: Textfarbe auf #fff geändert */
-    padding: 10px 20px; /* Kommentar: Abstand auf 10px 20px geändert */
-    border: none; /* Kommentar: Rand entfernt */
-    border-radius: 5px; /* Kommentar: Ecken auf 5px geändert */
-    cursor: pointer; /* Kommentar: Mauszeiger auf pointer geändert */
+.required {
+    color: #ff6600;
 }
 
-.cta-button:hover {
-    background-color: #3e8e41; /* Kommentar: Hintergrundfarbe auf #3e8e41 geändert */
+.name-inputs {
+    display: flex;
+    gap: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+}
+
+textarea {
+    height: 150px;
 }
 
 footer {
