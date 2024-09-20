@@ -1,5 +1,5 @@
 body {
-    font-family: 'Epilogue'; /* Nur die angegebene Schriftart */
+    font-family: Epilogue; /* Nur 'Epilogue' verwendet */
     line-height: 1.6;
     color: #333;
     margin: 0;
@@ -24,7 +24,7 @@ header h1 {
     float: left;
     margin: 0;
     font-size: 2rem; /* Headergröße vergrößert */
-    font-family: 'Anton'; /* Nur die angegebene Schriftart */
+    font-weight: normal;
 }
 
 header nav {
@@ -50,20 +50,25 @@ header a {
 }
 
 h2 {
-    font-family: 'Anton'; /* Nur die angegebene Schriftart */
+    font-family: Anton; /* Schriftart für Überschriften */
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
 
+.markenname { /* Klasse für markierte Überschriften */
+    font-family: 'Anton', sans-serif; /* Schriftart 'Anton' für markierte Überschriften */
+}
+
 p {
-    font-family: 'Epilogue'; /* Nur die angegebene Schriftart */
+    font-family: Epilogue; /* Schriftart für Texte */
     font-size: 1rem;
     margin-bottom: 2rem;
 }
 
 .cta-button {
+    font-family: Anton; /* Schriftart 'Anton' für Buttons */
     display: inline-block;
     background: #ff6600;
     color: #fff;
@@ -118,25 +123,4 @@ textarea {
 footer {
     background: #333;
     color: #fff;
-    padding: 2rem 0;
-}
-
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: #ff6600;
-    text-decoration: none;
-}
-
-.text-right {
-    text-align: right;
-}
+    padding: 2
