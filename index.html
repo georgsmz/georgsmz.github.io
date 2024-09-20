@@ -3,34 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deine Marke</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Meine persönliche Blockpage - [Dein Name]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+        header {
+            background: #f4f4f4;
+            padding: 1rem 0;
+            margin-bottom: 30px;
+        }
+        header nav {
+            float: right;
+        }
+        header ul {
+            padding: 0;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px;
+        }
+        header a {
+            color: #333;
+            text-decoration: none;
+        }
+        .hero {
+            background: #f4f4f4;
+            padding: 2rem 0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background: #ff6600;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .about, .social-media, .contact {
+            padding: 2rem 0;
+        }
+        .social-media img {
+            width: 100%;
+            max-width: 150px;
+            margin: 10px;
+        }
+        form {
+            display: grid;
+            gap: 1rem;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Meine persönliche Blockpage - [Dein Name]</h1>
+            <nav>
+                <ul>
+                    <li><a href="#uber-uns">Über uns</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <!-- Section 1: Hero Section -->
     <section class="hero">
-        <header class="hero-header">
-            <p>MEINE PERSÃ–NLICHE BLOCKPAGE - GEORG B.</p>
-        </header>
-        <div class="hero-content">
+        <div class="container">
             <h1>DEIN MARKENNAME</h1>
-            <p>BegrÃ¼ÃŸe die Besucher deiner Website mit einer sympathischen EinfÃ¼hrung, die kurz und bÃ¼ndig auf den Punkt bringt, wer du bist!</p>
-            <button>MEHR ERFAHREN</button>
+            <p>Begrüße die Besucher deiner Website mit einer sympathischen Einführung, die kurz und bündig auf den Punkt bringt, wer du bist.</p>
+            <a href="#" class="cta-button">MEHR ERFAHREN</a>
         </div>
     </section>
 
-    <!-- Section 2: About Section -->
-    <section class="about">
-        <div class="about-image">
-            <img src="image2.jpeg" alt="Pyramid and objects">
-        </div>
-        <div class="about-content">
-            <h2>MEHR ÃœBER UNSERE MARKE</h2>
-            <p>ErzÃ¤hle den Leuten mehr Ã¼ber dich, woher du kommst, wo du arbeitest oder was dich inspiriert. Lass deiner KreativitÃ¤t freien Lauf. Die Art und Weise, wie du deine Geschichte online vermittelst, kann einen gewaltigen Unterschied machen.</p>
-            <button>MEHR ERFAHREN</button>
+    <section id="uber-uns" class="about">
+        <div class="container">
+            <h2>MEHR ÜBER UNSERE MARKE</h2>
+            <p>Erzähle den Leuten mehr über dich, woher du kommst, wie du arbeitest oder was dich inspiriert. Lass deiner Kreativität freien Lauf. Du kannst das. Die Art und Weise, wie du deine Geschichte online vermittelst, kann einen gewaltigen Unterschied machen.</p>
+            <a href="#" class="cta-button">MEHR ERFAHREN</a>
         </div>
     </section>
 
+    <section class="social-media">
+        <div class="container">
+            <h2>FOLGE UNS AUF SOCIAL MEDIA</h2>
+            <!-- Ersetze die Platzhalter-URLs durch deine eigenen Bilder -->
+            <img src="https://via.placeholder.com/150" alt="Social Media 1">
+            <img src="https://via.placeholder.com/150" alt="Social Media 2">
+            <img src="https://via.placeholder.com/150" alt="Social Media 3">
+            <img src="https://via.placeholder.com/150" alt="Social Media 4">
+            <br>
+            <a href="#" class="cta-button">SOCIAL MEDIA</a>
+        </div>
+    </section>
+
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <h2>NIMM KONTAKT MIT UNS AUF</h2>
+            <p>Hast du Interesse an einer Zusammenarbeit? Fülle bitte das Formular aus und wir werden uns in Kürze bei dir melden. Wir freuen uns schon darauf, von dir zu hören.</p>
+            <form>
+                <input type="text" name="vorname" placeholder="Vorname" required>
+                <input type="text" name="nachname" placeholder="Nachname" required>
+                <input type="email" name="email" placeholder="E-Mail-Adresse" required>
+                <textarea name="nachricht" placeholder="Nachricht" required></textarea>
+                <button type="submit" class="cta-button">SENDEN</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>DEIN WEBSITE-TITEL</p>
+            <p>STANDORT: Beispielstraße 123, New York, NY 12345, USA</p>
+            <p>KONTAKT: <a href="mailto:email@beispiel.com">email@beispiel.com</a> | +1 (555) 555-5555</p>
+        </div>
+    </footer>
 </body>
 </html>
