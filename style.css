@@ -1,132 +1,119 @@
 body {
-    font-family: Epilogue;
+    font-family: Epilogue; /* Nur die angegebene Schriftart */
     line-height: 1.6;
     color: #333;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
 }
+
 .container {
     width: 80%;
     margin: auto;
     overflow: hidden;
     padding: 0 20px;
 }
+
 header {
     background: #f4f4f4;
-    padding: 2rem 0;
+    padding: 2rem 0; /* Abstand vergrößert */
     margin-bottom: 3rem;
 }
+
 header h1 {
     float: left;
     margin: 0;
-    font-size: 1.5rem; /* Änderung: Schriftgröße verkleinert */
-    font-family: Anton;
-    max-width: 378.82px; /* Änderung: Maximale Breite hinzugefügt */
-    max-height: 35.56px; /* Änderung: Maximale Höhe hinzugefügt */
+    font-size: 2rem; /* Headergröße um 5px vergrößert */
+    font-family: Anton; /* Nur die angegebene Schriftart */
 }
+
 header nav {
     float: right;
 }
+
 header ul {
     padding: 0;
 }
+
 header li {
     display: inline;
     padding: 0 20px;
 }
+
 header a {
     color: #333;
     text-decoration: none;
 }
+
 .hero, .about, .social-media, .contact {
-    padding: 5rem 0;
-    text-align: center;
+    padding: 5rem 0; /* Abstand zwischen Elementen vergrößert */
+    text-align: center; /* Zentrierung für Abschnitte */
 }
+
 h2 {
-    font-family: Anton;
-    font-size: calc(5rem + 10px);
-    font-weight: normal;
+    font-family: Anton; /* Nur die angegebene Schriftart */
+    font-size: calc(5rem + 10px); /* Schriftgröße um 10px erhöht */
+    font-weight: normal; /* Font-Weight auf normal gesetzt */
     margin-bottom: 2rem;
     text-transform: uppercase;
-    text-align: center; /* Änderung: Zentriert */
-}
-h1.welcome {
-    text-align: center;
-}
-.image-container {
     position: relative;
-    margin-bottom: 362px;
+    left: -450px; /* Schrift um 450px nach links verschoben */
+    top: -10px; /* Schrift um 10px nach oben verschoben */ /* Änderung: Text 10px höher */
 }
-.profile-image {
-    width: 400px;
-    height: auto;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -1;
-    filter: none;
+
+h1.welcome { /* Neue Klasse für die Willkommensnachricht */
+    text-align: center; /* Zentrierung für die Willkommensnachricht */
 }
+
+.image-container {
+    position: relative; /* Positionierung für das Bild */
+    margin-bottom: 362px; /* Abstand zwischen Text und Bild */
+}
+
+.profile-image { /* Klasse für das Bild */
+    width: 400px; /* Breite des Bildes proportional verkleinert */
+    height: auto; /* Höhe automatisch anpassen */
+    position: absolute; /* Absolut positioniert, um hinter der Schrift zu sein */
+    right: 0; /* Bild rechtsbündig */
+    top: 50%; /* Vertikale Zentrierung */
+    transform: translateY(-50%); /* Zentrierung */
+    z-index: -1; /* Bild hinter dem Text */
+    filter: none; /* Graufilter entfernt */
+}
+
 p {
-    font-family: Epilogue;
+    font-family: Epilogue; /* Nur die angegebene Schriftart */
     font-size: 1rem;
     margin-bottom: 2rem;
-    text-align: center;
+    text-align: center; /* Zentrierung für Absätze */
     position: relative;
-    top: -10px;
+    top: -10px; /* Text um 10px höher gesetzt */ /* Änderung: Text um 10px nach oben verschoben */
 }
+
 .cta-button {
     display: inline-block;
-    background: #ff6600;
+    background: #ff6600; /* Grundfarbe Orange */
     color: #fff;
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 25px; /* Runde Ecken hinzugefügt */ /* Änderung: Buttons abgerundet */
     text-align: center;
-    transition: background-color 0.3s ease;
-    margin-top: 5px;
+    transition: background-color 0.3s ease; /* Weicher Übergang für Farbänderung */ /* Änderung: Transition hinzugefügt */
 }
+
 .cta-button:hover {
-    background-color: #000;
+    background-color: #000; /* Button wird schwarz, wenn die Maus darüber ist */ /* Änderung: Farbe bei Hover geändert */
     cursor: pointer;
 }
+
+.cta-button:hover:active {
+    background-color: #000;
+}
+
 .cta-button:focus {
     background-color: #000;
 }
-.social-images {
-    display: flex;
-    justify-content: center;
-    gap: 25px; /* Änderung: Abstand zwischen den Bildern hinzugefügt */
-}
-.social-images a {
-    display: inline-block;
-}
-.social-images img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-}
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-.form-group {
-    margin-bottom: 1rem;
-}
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    text-align: left;
-}
-input[type="text"],
-input[type="email"],
-textarea {
-    width: 100%;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-textarea {
-    height: 150px;
+
+p:hover ~ .cta-button {
+    background: #000;
 }
