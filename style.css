@@ -52,7 +52,7 @@ header a {
 
 h2 {
     font-family: Anton; /* Nur die angegebene Schriftart */
-    font-size: 8rem; /* Schriftgröße auf 4rem erhöht */
+    font-size: 5rem; /* Schriftgröße auf 4rem erhöht */
     /*font-weight: 400; /* Font-Weight auf 400 gesetzt */
     margin-bottom: 2rem;
     text-transform: uppercase;
