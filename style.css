@@ -52,10 +52,12 @@ header a {
 
 h2 {
     font-family: Anton; /* Nur die angegebene Schriftart */
-    font-size: 5rem; /* Schriftgröße auf 5rem erhöht */
+    font-size: calc(5rem + 10px); /* Schriftgröße um 10px erhöht */
     font-weight: normal; /* Font-Weight auf normal gesetzt */
     margin-bottom: 2rem;
     text-transform: uppercase;
+    position: relative;
+    left: -450px; /* Schrift um 450px nach links verschoben */
 }
 
 h1.welcome { /* Neue Klasse für die Willkommensnachricht */
@@ -68,14 +70,13 @@ h1.welcome { /* Neue Klasse für die Willkommensnachricht */
 }
 
 .profile-image { /* Klasse für das Bild */
-    width: 592px; /* Breite auf 592px gesetzt */
-    height: 689px; /* Höhe auf 689px gesetzt */
+    width: 1435px; /* Breite auf 1435px gesetzt */
+    height: 1889px; /* Höhe auf 1889px gesetzt */
     position: absolute; /* Absolut positioniert, um hinter der Schrift zu sein */
     right: 0; /* Bild rechtsbündig */
     top: 50%; /* Zentrierung */
     transform: translateY(-50%); /* Vertikale Zentrierung */
     z-index: -1; /* Bild hinter dem Text */
-    filter: grayscale(80%); /* Bild grau gemacht */
 }
 
 p {
@@ -91,7 +92,4 @@ p {
     color: #fff;
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin
+    border-radius
