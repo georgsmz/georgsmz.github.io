@@ -4,7 +4,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #dad9d9; /* Hintergrundfarbe geändert */
+    background-color: #dad9d9; /* Kommentar: Hintergrundfarbe auf #dad9d9 geändert */
 }
 .container {
     width: 80%;
@@ -20,12 +20,12 @@ header {
 header h1 {
     float: left;
     margin: 0;
-    font-size: 2rem; /* Schriftgröße geändert auf 2rem */
+    font-size: 2rem; /* Kommentar: Schriftgröße auf 2rem geändert */
     font-family: Anton, sans-serif;
     max-width: 378.82px;
     max-height: 35.56px;
     overflow: hidden;
-    font-weight: normal; /* NICHT bold */
+    font-weight: normal; /* Kommentar: Schriftgewicht auf normal (nicht bold) geändert */
 }
 header nav {
     float: right;
@@ -45,17 +45,13 @@ header a {
     padding: 5rem 0;
     text-align: center;
 }
-h2 {
+h2.section-title {
     font-family: Anton, sans-serif;
-    font-size: calc(5rem + 10px);
-    font-weight: normal; /* NICHT bold */
+    font-size: 2rem; /* Kommentar: Schriftgröße auf 2rem geändert */
+    font-weight: normal; /* Kommentar: Schriftgewicht auf normal (nicht bold) geändert */
     margin-bottom: 2rem;
     text-transform: uppercase;
     text-align: center;
-}
-h2.section-title {
-    font-size: 2rem; /* Schriftgröße geändert auf 2rem */
-    font-weight: normal; /* NICHT bold */
 }
 h1.welcome {
     text-align: center;
@@ -75,9 +71,9 @@ h1.welcome {
     filter: none;
 }
 h2 strong {
-    font-size: calc(5rem + 11px); /* Schriftgröße um 1 Einheit vergrößert */
+    font-size: calc(1em + 1rem); /* Kommentar: Schriftgröße um 1 Einheit erhöht */
     position: relative;
-    left: -450px; /* Verschoben um 450px nach links */
+    left: -450px; /* Kommentar: Nach links um 450px verschoben */
 }
 p {
     font-family: Epilogue, sans-serif;
