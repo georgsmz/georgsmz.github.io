@@ -21,7 +21,7 @@ header h1 {
     float: left;
     margin: 0;
     font-size: 4rem; /* Schriftgröße auf 4rem geändert */
-    font-family: Anton, sans-serif;
+    font-family: Anton;
     max-width: 378.82px;
     max-height: 35.56px;
     overflow: hidden;
@@ -45,7 +45,7 @@ header a {
     text-align: center;
 }
 h2.section-title {
-    font-family: Anton, sans-serif;
+    font-family: Anton;
     font-size: calc(5rem + 10px); /* Schriftgröße um 1 Einheit größer */
     font-weight: normal; /* Schrift nicht fett */
     margin-bottom: 2rem;
@@ -70,7 +70,7 @@ h1.welcome {
     filter: none;
 }
 p {
-    font-family: Epilogue, sans-serif;
+    font-family: Epilogue;
     font-size: 1rem;
     margin-bottom: 2rem;
     text-align: center;
