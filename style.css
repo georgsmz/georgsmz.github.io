@@ -60,8 +60,8 @@ h1.welcome {
     margin-bottom: 20px;
 }
 .profile-image {
-    width: 400px;
-    height: auto;
+    width: auto;
+    height: 400px;
     position: absolute;
     right: 0;
     top: 50%;
