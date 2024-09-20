@@ -52,11 +52,12 @@ header a {
 
 h2 {
     font-family: Anton; /* Nur die angegebene Schriftart */
-    font-size: 2.5rem; /* Größe für "DEIN MARKENNAME" um 10px vergrößert */
-    font-weight: bold;
+    font-size: 4rem; /* Schriftgröße auf 4rem erhöht */
+    font-weight: 400; /* Font-Weight auf 400 gesetzt */
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
+
 
 h1.welcome { /* Neue Klasse für die Willkommensnachricht */
     text-align: center; /* Zentrierung für die Willkommensnachricht */
