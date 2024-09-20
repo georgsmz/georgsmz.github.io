@@ -1,99 +1,124 @@
 body {
-    background-color: #dad9d9; /* Kommentar: Hintergrundfarbe der Website geändert */
+    font-family: Epilogue;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
-
-.centered-title {
-    text-align: center; /* Kommentar: Zentrierung für bestimmte Überschriften hinzugefügt */
-    font-size: 2rem; /* Kommentar: Schriftgröße auf 2rem geändert */
-    font-weight: normal; /* Kommentar: Bold-Eigenschaft entfernt */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
 }
-
-.brand-name {
-    font-size: 1.1em; /* Kommentar: Größe um 1 Einheit erhöht */
+header {
+    background: #f4f4f4;
+    padding: 2rem 0;
+    margin-bottom: 3rem;
 }
-
-.section-title {
+header h1 {
+    float: left;
+    margin: 0;
+    font-size: 1.5rem; /* Änderung: Schriftgröße verkleinert */
     font-family: Anton;
-    font-size: 2rem; /* Kommentar: Schriftgröße auf 2rem geändert */
+    max-width: 378.82px; /* Änderung: Maximale Breite hinzugefügt */
+    max-height: 35.56px; /* Änderung: Maximale Höhe hinzugefügt */
+}
+header nav {
+    float: right;
+}
+header ul {
+    padding: 0;
+}
+header li {
+    display: inline;
+    padding: 0 20px;
+}
+header a {
+    color: #333;
+    text-decoration: none;
+}
+.hero, .about, .social-media, .contact {
+    padding: 5rem 0;
+    text-align: center;
+}
+h2 {
+    font-family: Anton;
+    font-size: calc(5rem + 10px);
     font-weight: normal;
     margin-bottom: 2rem;
     text-transform: uppercase;
+    text-align: center; /* Änderung: Zentriert */
+}
+h1.welcome {
     text-align: center;
 }
-
-.centered-textarea {
-    display: block;
-    margin: 0 auto;
+.image-container {
+    position: relative;
+    margin-bottom: 362px;
+}
+.profile-image {
+    width: 400px;
+    height: auto;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    filter: none;
+}
+p {
+    font-family: Epilogue;
+    font-size: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
-    width: 80%;
-    max-width: 600px;
-} /* Kommentar: Stil für zentriertes Textfeld hinzugefügt */
-
-.image-placeholders, .video-placeholders {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px; /* Kommentar: Abstand zwischen Platzhaltern hinzugefügt */
-    margin-bottom: 20px;
-} /* Kommentar: Container für Bild- und Videoplatzhalter hinzugefügt */
-
-.image-placeholder, .video-placeholder {
-    width: 150px;
-    height: 150px;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-} /* Kommentar: Stil für Bild- und Videoplatzhalter hinzugefügt */
-
-.placeholder-link {
+    position: relative;
+    top: -10px;
+}
+.cta-button {
+    display: inline-block;
+    background: #ff6600;
+    color: #fff;
+    padding: 12px 24px;
     text-decoration: none;
-    color: inherit;
-} /* Kommentar: Stil für Platzhalter-Links hinzugefügt */
-
+    border-radius: 50px;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+.cta-button:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+.cta-button:focus {
+    background-color: #000;
+}
 .social-images {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    margin-bottom: 20px;
+    gap: 25px; /* Änderung: Abstand zwischen den Bildern hinzugefügt */
 }
-
 .social-images a {
     display: inline-block;
 }
-
 .social-images img {
     width: 150px;
     height: 150px;
     object-fit: cover;
 }
-
 form {
     max-width: 600px;
     margin: 0 auto;
 }
-
 .form-group {
     margin-bottom: 1rem;
 }
-
 label {
     display: block;
     margin-bottom: 0.5rem;
     text-align: left;
-    color: #333;
 }
-
-.required {
-    color: #ff6600;
-}
-
-.name-inputs {
-    display: flex;
-    gap: 10px;
-}
-
 input[type="text"],
 input[type="email"],
 textarea {
@@ -101,44 +126,7 @@ textarea {
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
-    background-color: #f4f4f4;
 }
-
 textarea {
     height: 150px;
-}
-
-footer {
-    background: #f4f4f4;
-    color: #333;
-    padding: 2rem 0;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.footer-title {
-    font-weight: bold;
-    margin: 0;
-}
-
-.footer-info {
-    text-align: right;
-    margin: 0;
-}
-
-.footer-credit {
-    text-align: center;
-    margin: 0;
-    font-size: 0.8rem;
-    color: #666;
-}
-
-footer a {
-    color: #ff6600;
-    text-decoration: none;
 }
