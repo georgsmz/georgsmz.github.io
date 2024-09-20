@@ -71,8 +71,6 @@ p {
     text-align: center;
 }
 .intro-text {
-    position: relative;
-    top: 10px; /* Text um 10px nach unten verschoben */
     margin-bottom: 30px; /* Abstand zum Button auf 30px erhöht */
 }
 .cta-button {
@@ -84,7 +82,7 @@ p {
     border-radius: 50px; /* Abgerundete Buttons */
     text-align: center;
     transition: background-color 0.3s ease;
-    margin-top: 5px;
+    margin-top: 25px; /* Abstand über dem Button auf 25px erhöht */
 }
 .cta-button:hover {
     background-color: #000;
