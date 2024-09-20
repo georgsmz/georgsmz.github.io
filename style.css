@@ -70,8 +70,8 @@ h1.welcome { /* Neue Klasse für die Willkommensnachricht */
 }
 
 .profile-image { /* Klasse für das Bild */
-    width: 1435px; /* Bildbreite angepasst */
-    height: 1889px; /* Bildhöhe angepasst */
+    width: 600px; /* Bildbreite verkleinert auf 600px */
+    height: 789px; /* Bildhöhe proportional verkleinert */
     position: absolute; /* Absolut positioniert, um hinter der Schrift zu sein */
     right: 0; /* Bild rechtsbündig */
     top: 50%; /* Vertikale Zentrierung */
@@ -90,4 +90,8 @@ p {
 .cta-button {
     display: inline-block;
     background: #ff6600;
-    color:
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 4px;
+}
