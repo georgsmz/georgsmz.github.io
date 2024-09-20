@@ -1,5 +1,5 @@
 body {
-    font-family: Epilogue; /* Nur 'Epilogue' verwendet */
+    font-family: 'Epilogue'; /* Nur die angegebene Schriftart */
     line-height: 1.6;
     color: #333;
     margin: 0;
@@ -23,8 +23,8 @@ header {
 header h1 {
     float: left;
     margin: 0;
-    font-size: 2rem; /* Headergröße vergrößert */
-    font-weight: normal;
+    font-size: 2rem; /* Headergröße um 5px vergrößert */
+    font-family: 'Anton'; /* Nur die angegebene Schriftart */
 }
 
 header nav {
@@ -47,28 +47,29 @@ header a {
 
 .hero, .about, .social-media, .contact {
     padding: 5rem 0; /* Abstand zwischen Elementen vergrößert */
+    text-align: center; /* Zentrierung für Abschnitte */
 }
 
 h2 {
-    font-family: Anton; /* Schriftart für Überschriften */
-    font-size: 2.5rem;
+    font-family: 'Anton'; /* Nur die angegebene Schriftart */
+    font-size: 2.5rem; /* Größe für "DEIN MARKENNAME" um 10px vergrößert */
     font-weight: bold;
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
 
-.markenname { /* Klasse für markierte Überschriften */
-    font-family: 'Anton', sans-serif; /* Schriftart 'Anton' für markierte Überschriften */
+h1.welcome { /* Neue Klasse für die Willkommensnachricht */
+    text-align: center; /* Zentrierung für die Willkommensnachricht */
 }
 
 p {
-    font-family: Epilogue; /* Schriftart für Texte */
+    font-family: 'Epilogue'; /* Nur die angegebene Schriftart */
     font-size: 1rem;
     margin-bottom: 2rem;
+    text-align: center; /* Zentrierung für Absätze */
 }
 
 .cta-button {
-    font-family: Anton; /* Schriftart 'Anton' für Buttons */
     display: inline-block;
     background: #ff6600;
     color: #fff;
@@ -77,6 +78,7 @@ p {
     border-radius: 30px;
     font-weight: bold;
     text-transform: uppercase;
+    margin: 0 auto; /* Zentrierung des Buttons */
 }
 
 .social-media {
@@ -123,4 +125,25 @@ textarea {
 footer {
     background: #333;
     color: #fff;
-    padding: 2
+    padding: 2rem 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+footer a {
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.text-right {
+    text-align: right;
+}
