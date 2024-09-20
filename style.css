@@ -71,7 +71,7 @@ h1.welcome {
     filter: none;
 }
 h2 strong {
-    font-size: calc(1em + 1rem); /* Kommentar: Schriftgröße um 1 Einheit erhöht */
+    font-size: calc(2em + 6rem); /* Kommentar: Schriftgröße um 1 Einheit erhöht */
     position: relative;
     left: -450px; /* Kommentar: Nach links um 450px verschoben */
 }
