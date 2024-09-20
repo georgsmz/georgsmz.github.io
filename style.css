@@ -1,11 +1,56 @@
+body {
+    background-color: #dad9d9; /* Kommentar: Hintergrundfarbe der Website geändert */
+}
+
+.centered-title {
+    text-align: center; /* Kommentar: Zentrierung für bestimmte Überschriften hinzugefügt */
+    font-size: 2rem; /* Kommentar: Schriftgröße auf 2rem geändert */
+    font-weight: normal; /* Kommentar: Bold-Eigenschaft entfernt */
+}
+
+.brand-name {
+    font-size: 1.1em; /* Kommentar: Größe um 1 Einheit erhöht */
+}
+
 .section-title {
     font-family: Anton, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem; /* Kommentar: Schriftgröße auf 2rem geändert */
     font-weight: normal;
     margin-bottom: 2rem;
     text-transform: uppercase;
     text-align: center;
 }
+
+.centered-textarea {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+} /* Kommentar: Stil für zentriertes Textfeld hinzugefügt */
+
+.image-placeholders, .video-placeholders {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px; /* Kommentar: Abstand zwischen Platzhaltern hinzugefügt */
+    margin-bottom: 20px;
+} /* Kommentar: Container für Bild- und Videoplatzhalter hinzugefügt */
+
+.image-placeholder, .video-placeholder {
+    width: 150px;
+    height: 150px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+} /* Kommentar: Stil für Bild- und Videoplatzhalter hinzugefügt */
+
+.placeholder-link {
+    text-decoration: none;
+    color: inherit;
+} /* Kommentar: Stil für Platzhalter-Links hinzugefügt */
 
 .social-images {
     display: flex;

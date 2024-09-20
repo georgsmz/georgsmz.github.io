@@ -10,7 +10,7 @@
 <body>
     <header>
         <div class="container">
-            <h1>Meine persönliche Blockpage - Georg B.</h1> <!-- Kommentar: Größe angepasst -->
+            <h1 class="centered-title">Meine persönliche Blockpage - Georg B.</h1> <!-- Kommentar: Klasse hinzugefügt für Zentrierung und Größenanpassung -->
             <nav>
                 <ul>
                     <li><a href="#uber-uns">Über uns</a></li>
@@ -19,76 +19,81 @@
             </nav>
         </div>
     </header>
-
     <section class="hero">
         <div class="container">
             <h1 class="welcome">👋 Willkommen auf meiner Website!</h1>
             <div class="image-container">
                 <img src="dein-bild.jpg" alt="Mein Bild" class="profile-image">
-                <h2><strong>DEIN MARKENNAME</strong></h2>
+                <h2 class="brand-name"><strong>DEIN MARKENNAME</strong></h2> <!-- Kommentar: Klasse hinzugefügt für Größenanpassung -->
             </div>
-            <p class="intro-text">Begrüße die Besucher deiner Website mit einer sympathischen Einführung, die kurz und bündig auf den Punkt bringt, wer du bist.</p> <!-- Kommentar: Klasse hinzugefügt für spezifische Positionierung -->
+            <p class="intro-text">Begrüße die Besucher deiner Website mit einer sympathischen Einführung, die kurz und bündig auf den Punkt bringt, wer du bist.</p>
             <a href="#" class="cta-button">MEHR ERFAHREN</a>
         </div>
     </section>
-
-<section id="uber-uns" class="about">
-    <div class="container">
-        <h2 class="section-title">MEHR ÜBER MICH</h2>
-        <!-- Rest bleibt unverändert -->
-    </div>
-</section>
-
-<section class="social-media">
-    <div class="container">
-        <h2 class="section-title">Aktuelle Bilder</h2>
-        <!-- Rest bleibt unverändert -->
-    </div>
-</section>
-
-<section class="social-media">
-    <div class="container">
-        <h2 class="section-title">Aktuelle Videos</h2>
-        <!-- Rest bleibt unverändert -->
-    </div>
-</section>
-
-<section id="kontakt" class="contact">
-    <div class="container">
-        <h2 class="section-title">KONTAKT</h2>
-        <p>Hast du Interesse an einer Zusammenarbeit? Fülle bitte das Formular aus und wir werden uns in Kürze bei dir melden. Wir freuen uns schon darauf, von dir zu hören.</p>
-        <form>
-            <div class="form-group">
-                <label for="name">Name <span class="required">(erforderlich)</span></label>
-                <div class="name-inputs">
-                    <input type="text" id="vorname" name="vorname" placeholder="Vorname" required>
-                    <input type="text" id="nachname" name="nachname" placeholder="Nachname" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="email">E-Mail-Adresse <span class="required">(erforderlich)</span></label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="nachricht">Nachricht <span class="required">(erforderlich)</span></label>
-                <textarea id="nachricht" name="nachricht" required></textarea>
-            </div>
-            <button type="submit" class="cta-button">SENDEN</button>
-        </form>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <div class="footer-content">
-            <p class="footer-title">DEIN WEBSITE-TITEL</p>
-            <p class="footer-info">
-                STANDORT: Beispielstraße 123, New York, NY 12345, USA<br>
-                KONTAKT: <a href="mailto:email@beispiel.com">email@beispiel.com</a> | +1 (555) 555-5555
-            </p>
+    <section id="uber-uns" class="about">
+        <div class="container">
+            <h2 class="section-title centered-title">MEHR ÜBER MICH</h2> <!-- Kommentar: Klasse hinzugefügt für Zentrierung -->
+            <textarea class="centered-textarea" rows="4" cols="50">hallo</textarea> <!-- Kommentar: Textfeld hinzugefügt und zentriert -->
+            <!-- Rest bleibt unverändert -->
         </div>
-        <p class="footer-credit">Erstellt mit Squarespace</p>
-    </div>
-</footer>
+    </section>
+    <section class="social-media">
+        <div class="container">
+            <h2 class="section-title centered-title">Aktuelle Bilder</h2> <!-- Kommentar: Klasse hinzugefügt für Zentrierung -->
+            <div class="image-placeholders"> <!-- Kommentar: Container für Bildplatzhalter hinzugefügt -->
+                <a href="#" class="placeholder-link"><div class="image-placeholder"></div></a>
+                <a href="#" class="placeholder-link"><div class="image-placeholder"></div></a>
+                <a href="#" class="placeholder-link"><div class="image-placeholder"></div></a>
+                <a href="#" class="placeholder-link"><div class="image-placeholder"></div></a>
+            </div>
+        </div>
+    </section>
+    <section class="social-media">
+        <div class="container">
+            <h2 class="section-title centered-title">Aktuelle Videos</h2> <!-- Kommentar: Klasse hinzugefügt für Zentrierung -->
+            <div class="video-placeholders"> <!-- Kommentar: Container für Videoplatzhalter hinzugefügt -->
+                <a href="#" class="placeholder-link"><div class="video-placeholder"></div></a>
+                <a href="#" class="placeholder-link"><div class="video-placeholder"></div></a>
+                <a href="#" class="placeholder-link"><div class="video-placeholder"></div></a>
+                <a href="#" class="placeholder-link"><div class="video-placeholder"></div></a>
+            </div>
+        </div>
+    </section>
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <h2 class="section-title centered-title">KONTAKT</h2> <!-- Kommentar: Klasse hinzugefügt für Zentrierung -->
+            <p>Hast du Interesse an einer Zusammenarbeit? Fülle bitte das Formular aus und wir werden uns in Kürze bei dir melden. Wir freuen uns schon darauf, von dir zu hören.</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name <span class="required">(erforderlich)</span></label>
+                    <div class="name-inputs">
+                        <input type="text" id="vorname" name="vorname" placeholder="Vorname" required>
+                        <input type="text" id="nachname" name="nachname" placeholder="Nachname" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail-Adresse <span class="required">(erforderlich)</span></label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="nachricht">Nachricht <span class="required">(erforderlich)</span></label>
+                    <textarea id="nachricht" name="nachricht" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">SENDEN</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-title">DEIN WEBSITE-TITEL</p>
+                <p class="footer-info">
+                    STANDORT: Beispielstraße 123, New York, NY 12345, USA<br>
+                    KONTAKT: <a href="mailto:email@beispiel.com">email@beispiel.com</a> | +1 (555) 555-5555
+                </p>
+            </div>
+            <p class="footer-credit">Erstellt mit Squarespace</p>
+        </div>
+    </footer>
 </body>
 </html>
