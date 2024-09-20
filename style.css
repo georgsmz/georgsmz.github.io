@@ -11,7 +11,21 @@ body {
 .brand-name {
     font-size: 1.1em; /* Kommentar: Größe um 1 Einheit erhöht */
 }
-
+h2 {
+    font-family: Anton; /* Nur die angegebene Schriftart */
+    font-size: calc(5rem + 10px); /* Schriftgröße um 10px erhöht */
+    font-weight: normal; /* Font-Weight auf normal gesetzt */
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    position: relative;
+    left: -450px; /* Schrift um 450px nach links verschoben */
+    top: -10px; /* Schrift um 10px nach oben verschoben */ /* Änderung: Text 10px höher */
+}
+	
+h1.welcome { /* Neue Klasse für die Willkommensnachricht */
+    text-align: center; /* Zentrierung für die Willkommensnachricht */
+}
+	
 .section-title {
     font-family: Anton, sans-serif;
     font-size: 2rem; /* Kommentar: Schriftgröße auf 2rem geändert */
@@ -19,6 +33,15 @@ body {
     margin-bottom: 2rem;
     text-transform: uppercase;
     text-align: center; /* Kommentar: Zentrierung für bestimmte Überschriften hinzugefügt */
+}
+
+p {
+    font-family: Epilogue; /* Nur die angegebene Schriftart */
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    text-align: center; /* Zentrierung für Absätze */
+    position: relative;
+    top: -10px; /* Text um 10px höher gesetzt */ /* Änderung: Text um 10px nach oben verschoben */
 }
 
 .image-placeholders, .video-placeholders {
