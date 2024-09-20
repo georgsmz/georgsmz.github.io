@@ -96,24 +96,17 @@ p {
     color: #fff;
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: 25px; /* Runde Ecken hinzugefügt */ /* Änderung: Buttons abgerundet */
+    border-radius: 50px; /* Extrem abgerundete Ecken hinzugefügt */ /* Änderung: Extrem abgerundete Buttons */
     text-align: center;
-    transition: background-color 0.3s ease; /* Weicher Übergang für Farbänderung */ /* Änderung: Transition hinzugefügt */
+    transition: background-color 0.3s ease; /* Weicher Übergang für Farbänderung */
+    margin-top: 5px; /* Abstand zum oberen Element auf 5px reduziert */ /* Änderung: Abstand auf 5px verringert */
 }
 
 .cta-button:hover {
-    background-color: #000; /* Button wird schwarz, wenn die Maus darüber ist */ /* Änderung: Farbe bei Hover geändert */
+    background-color: #000; /* Button wird schwarz, wenn die Maus darüber ist */
     cursor: pointer;
-}
-
-.cta-button:hover:active {
-    background-color: #000;
 }
 
 .cta-button:focus {
     background-color: #000;
-}
-
-p:hover ~ .cta-button {
-    background: #000;
 }
