@@ -53,14 +53,19 @@ header a {
 h2 {
     font-family: Anton; /* Nur die angegebene Schriftart */
     font-size: 5rem; /* Schriftgröße auf 4rem erhöht */
-    /*font-weight: 400; /* Font-Weight auf 400 gesetzt */
+    font-weight: normal; /* Font-Weight auf normal gesetzt */
     margin-bottom: 2rem;
     text-transform: uppercase;
 }
 
-
 h1.welcome { /* Neue Klasse für die Willkommensnachricht */
     text-align: center; /* Zentrierung für die Willkommensnachricht */
+}
+
+.profile-image { /* Klasse für das Bild */
+    width: 1391px; /* Breite auf 1391px gesetzt */
+    height: 170px; /* Höhe auf 170px gesetzt */
+    margin-bottom: 20px; /* Kleiner Abstand nach dem Bild hinzugefügt */
 }
 
 p {
@@ -104,47 +109,4 @@ form {
 }
 
 .form-group {
-    margin-bottom: 2rem; /* Abstand zwischen Formularfeldern vergrößert */
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-textarea {
-    height: 150px;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    padding: 2rem 0;
-}
-
-footer .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-}
-
-footer a {
-    color: #ff6600;
-    text-decoration: none;
-}
-
-.text-right {
-    text-align: right;
-}
+    margin-bottom: 2rem; /* Abstand zwischen Formularfeldern
