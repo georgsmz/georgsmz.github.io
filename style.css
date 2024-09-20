@@ -59,11 +59,14 @@ h1.welcome {
     position: relative;
     margin-bottom: 20px;
 }
+
 .profile-image {
-    width: 600px; /* Bildbreite erhöht */
-    height: auto; /* Proportional */
+    width: 405px; /* Breite auf 405px gesetzt */
+    height: 536px; /* Höhe auf 536px gesetzt */
+    object-fit: cover; /* Proportionale Darstellung, falls nötig */
     margin: 0 auto; /* Zentriert das Bild */
 }
+
 p {
     font-family: Epilogue, sans-serif;
     font-size: 1rem;
