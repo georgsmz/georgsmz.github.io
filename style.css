@@ -1,153 +1,82 @@
-body {
-    background-color: #dad9d9; /* Kommentar: Hintergrundfarbe der Website geändert */
-}
-
-.centered-title {
-    text-align: center; /* Kommentar: Zentrierung für bestimmte Überschriften hinzugefügt */
-    font-size: 2rem; /* Kommentar: Schriftgröße auf 2rem geändert */
-    font-weight: normal; /* Kommentar: Bold-Eigenschaft entfernt */
-}
-
-.brand-name {
-    font-size: 1.1em; /* Kommentar: Größe um 1 Einheit erhöht */
-}
-h2 {
-    font-family: Anton; /* Nur die angegebene Schriftart */
-    font-size: calc(5rem + 10px); /* Schriftgröße um 10px erhöht */
-    font-weight: normal; /* Font-Weight auf normal gesetzt */
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-    position: relative;
-    left: -450px; /* Schrift um 450px nach links verschoben */
-    top: -10px; /* Schrift um 10px nach oben verschoben */ /* Änderung: Text 10px höher */
-}
-	
-h1.welcome { /* Neue Klasse für die Willkommensnachricht */
-    text-align: center; /* Zentrierung für die Willkommensnachricht */
-}
-	
 .section-title {
     font-family: Anton, sans-serif;
-    font-size: 2rem; /* Kommentar: Schriftgröße auf 2rem geändert */
+    font-size: 3rem;
     font-weight: normal;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    text-align: center; /* Kommentar: Zentrierung für bestimmte Überschriften hinzugefügt */
+    text-align: center;
 }
-
-p {
-    font-family: Epilogue; /* Nur die angegebene Schriftart */
-    font-size: 1rem;
-    margin-bottom: 2rem;
-    text-align: center; /* Zentrierung für Absätze */
-    position: relative;
-    top: -10px; /* Text um 10px höher gesetzt */ /* Änderung: Text um 10px nach oben verschoben */
-}
-
-.image-placeholders, .video-placeholders {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px; /* Kommentar: Abstand zwischen Platzhaltern hinzugefügt */
-    margin-bottom: 20px;
-} /* Kommentar: Container für Bild- und Videoplatzhalter hinzugefügt */
-
-.image-placeholder, .video-placeholder {
-    width: 150px;
-    height: 150px;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-} /* Kommentar: Stil für Bild- und Videoplatzhalter hinzugefügt */
-
-.placeholder-link {
-    text-decoration: none;
-    color: inherit;
-} /* Kommentar: Stil für Platzhalter-Links hinzugefügt */
-
 .social-images {
     display: flex;
     justify-content: center;
     gap: 25px;
     margin-bottom: 20px;
 }
-
 .social-images a {
     display: inline-block;
 }
-
 .social-images img {
     width: 150px;
     height: 150px;
     object-fit: cover;
 }
-
 form {
     max-width: 600px;
     margin: 0 auto;
 }
-
 .form-group {
     margin-bottom: 1rem;
 }
-
 label {
     display: block;
     margin-bottom: 0.5rem;
     text-align: left;
     color: #333;
 }
-
 .required {
     color: #ff6600;
 }
-
 .name-inputs {
     display: flex;
     gap: 10px;
 }
-
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+textarea {
     width: 100%;
     padding: 0.5rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     background-color: #f4f4f4;
 }
-
+textarea {
+    height: 150px;
+}
 footer {
     background: #f4f4f4;
     color: #333;
     padding: 2rem 0;
 }
-
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1rem;
 }
-
 .footer-title {
     font-weight: bold;
     margin: 0;
 }
-
 .footer-info {
     text-align: right;
     margin: 0;
 }
-
 .footer-credit {
     text-align: center;
     margin: 0;
     font-size: 0.8rem;
     color: #666;
 }
-
 footer a {
     color: #ff6600;
     text-decoration: none;
