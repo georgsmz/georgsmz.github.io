@@ -71,8 +71,8 @@ h1.welcome { /* Neue Klasse für die Willkommensnachricht */
 }
 
 .profile-image { /* Klasse für das Bild */
-    width: 400px; /* Breite des Bildes proportional verkleinert */
-    height: auto; /* Höhe automatisch anpassen */
+    width: 400px; /* Breite des Bildes proportional verkleinert */ /* Änderung: Bild kleiner gemacht */
+    height: auto; /* Höhe automatisch anpassen */ /* Änderung: Bild proportional angepasst */
     position: absolute; /* Absolut positioniert, um hinter der Schrift zu sein */
     right: 0; /* Bild rechtsbündig */
     top: 50%; /* Vertikale Zentrierung */
@@ -86,34 +86,14 @@ p {
     font-size: 1rem;
     margin-bottom: 2rem;
     text-align: center; /* Zentrierung für Absätze */
-    position: relative;
-    top: -10px; /* Text um 10px höher gesetzt */ /* Änderung: Text um 10px nach oben verschoben */
 }
 
 .cta-button {
     display: inline-block;
-    background: #ff6600; /* Grundfarbe Orange */
+    background: #ff6600;
     color: #fff;
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: 25px; /* Runde Ecken hinzugefügt */ /* Änderung: Buttons abgerundet */
+    border-radius: 5px;
     text-align: center;
-    transition: background-color 0.3s ease; /* Weicher Übergang für Farbänderung */ /* Änderung: Transition hinzugefügt */
-}
-
-.cta-button:hover {
-    background-color: #000; /* Button wird schwarz, wenn die Maus darüber ist */ /* Änderung: Farbe bei Hover geändert */
-    cursor: pointer;
-}
-
-.cta-button:hover:active {
-    background-color: #000;
-}
-
-.cta-button:focus {
-    background-color: #000;
-}
-
-p:hover ~ .cta-button {
-    background: #000;
 }
