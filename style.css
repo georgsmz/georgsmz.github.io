@@ -4,7 +4,7 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
-    background-color: #dad9d9; /* Hintergrundfarbe geändert auf #dad9d9 */
+    background-color: #dad9d9; /* Hintergrundfarbe geändert */
 }
 .container {
     width: 80%;
@@ -20,11 +20,11 @@ header {
 header h1 {
     float: left;
     margin: 0;
-    font-size: 4rem; /* Schriftgröße auf 4rem geändert */
-    font-family: Anton;
-    max-width: 378.82px;
-    max-height: 35.56px;
-    overflow: hidden;
+    font-size: 4rem; /* Schriftgröße geändert */
+    font-family: Anton, sans-serif;
+    max-width: 378.82px; /* Maximale Breite */
+    max-height: 35.56px; /* Maximale Höhe */
+    overflow: hidden; /* Überlauf verstecken */
 }
 header nav {
     float: right;
@@ -44,13 +44,13 @@ header a {
     padding: 5rem 0;
     text-align: center;
 }
-h2.section-title {
-    font-family: Anton;
-    font-size: calc(5rem + 10px); /* Schriftgröße um 1 Einheit größer */
-    font-weight: normal; /* Schrift nicht fett */
+h2 {
+    font-family: Anton, sans-serif;
+    font-size: calc(5rem + 10px); /* Schriftgröße bleibt */
+    font-weight: normal; /* Nicht fett */
     margin-bottom: 2rem;
     text-transform: uppercase;
-    text-align: center;
+    text-align: center; /* Zentriert */
 }
 h1.welcome {
     text-align: center;
@@ -60,25 +60,20 @@ h1.welcome {
     margin-bottom: 20px;
 }
 .profile-image {
-    width: 600px;
-    height: auto;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -1;
-    filter: none;
+    width: 600px; /* Bildbreite erhöht */
+    height: auto; /* Proportional */
+    margin: 0 auto; /* Zentriert das Bild */
 }
 p {
-    font-family: Epilogue;
+    font-family: Epilogue, sans-serif;
     font-size: 1rem;
     margin-bottom: 2rem;
     text-align: center;
 }
 .intro-text {
     position: relative;
-    top: -10px;
-    margin-bottom: 10px;
+    top: 10px; /* Text um 10px nach unten verschoben */
+    margin-bottom: 30px; /* Abstand zum Button auf 30px erhöht */
 }
 .cta-button {
     display: inline-block;
@@ -86,7 +81,7 @@ p {
     color: #fff;
     padding: 12px 24px;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 50px; /* Abgerundete Buttons */
     text-align: center;
     transition: background-color 0.3s ease;
     margin-top: 5px;
@@ -101,8 +96,8 @@ p {
 .social-images {
     display: flex;
     justify-content: center;
-    gap: 25px;
-    margin-bottom: 20px;
+    gap: 25px; /* Abstand zwischen den Bildern */
+    margin-bottom: 20px; /* Abstand zum Button */
 }
 .social-images a {
     display: inline-block;
