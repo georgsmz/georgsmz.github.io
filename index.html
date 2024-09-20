@@ -1,45 +1,62 @@
----
-layout: default
-title: "Willkommen auf meinem Blog"
-description: "Dies ist mein persönlicher Blog, auf dem ich meine neuesten Fotos und Videos teile."
----
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogPage - Georg B.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>BlogPage - Georg B.</h1>
+        <p class="slogan">slogantest</p>
+        <p class="welcome">👋 Herzlich willkommen auf meinem Blog, schön, dass du hier bist!</p>
+    </header>
 
-<section class="content-section">
-  <h2>Meine neuesten Fotos</h2>
-  <div class="photo-gallery">
-    <div class="photo-item">
-      <a href="https://instagram.com/p/yourInstagramPost1" target="_blank">
-        <img src="{{ site.baseurl }}/assets/images/photo1.jpg" alt="Photo 1">
-      </a>
-    </div>
-    <div class="photo-item">
-      <a href="https://instagram.com/p/yourInstagramPost2" target="_blank">
-        <img src="{{ site.baseurl }}/assets/images/photo2.jpg" alt="Photo 2">
-      </a>
-    </div>
-    <div class="photo-item">
-      <a href="https://instagram.com/p/yourInstagramPost3" target="_blank">
-        <img src="{{ site.baseurl }}/assets/images/photo3.jpg" alt="Photo 3">
-      </a>
-    </div>
-  </div>
+    <!-- Main Section -->
+    <main class="main-content">
+        <!-- Latest Photos -->
+        <section class="gallery">
+            <h2>Aktuellste Bilder</h2>
+            <div class="photos">
+                <a href="https://www.instagram.com/p/BeispielFoto1" target="_blank">
+                    <img src="https://via.placeholder.com/200" alt="Foto 1">
+                </a>
+                <a href="https://www.instagram.com/p/BeispielFoto2" target="_blank">
+                    <img src="https://via.placeholder.com/200" alt="Foto 2">
+                </a>
+                <a href="https://www.instagram.com/p/BeispielFoto3" target="_blank">
+                    <img src="https://via.placeholder.com/200" alt="Foto 3">
+                </a>
+            </div>
+        </section>
 
-  <h2>Meine neuesten Videos</h2>
-  <div class="video-gallery">
-    <div class="video-item">
-      <a href="https://youtube.com/watch?v=yourYoutubeVideo1" target="_blank">
-        <img src="{{ site.baseurl }}/assets/images/video1.jpg" alt="Video 1">
-      </a>
-    </div>
-    <div class="video-item">
-      <a href="https://youtube.com/watch?v=yourYoutubeVideo2" target="_blank">
-        <img src="{{ site.baseurl }}/assets/images/video2.jpg" alt="Video 2">
-      </a>
-    </div>
-    <div class="video-item">
-      <a href="https://youtube.com/watch?v=yourYoutubeVideo3" target="_blank">
-        <img src="{{ site.baseurl }}/assets/images/video3.jpg" alt="Video 3">
-      </a>
-    </div>
-  </div>
-</section>
+        <!-- Latest Videos -->
+        <section class="videos">
+            <h2>Aktuellste Videos</h2>
+            <div class="video-links">
+                <a href="https://www.youtube.com/watch?v=BeispielVideo1" target="_blank">
+                    <img src="https://via.placeholder.com/200" alt="Video 1">
+                </a>
+                <a href="https://www.youtube.com/watch?v=BeispielVideo2" target="_blank">
+                    <img src="https://via.placeholder.com/200" alt="Video 2">
+                </a>
+                <a href="https://www.youtube.com/watch?v=BeispielVideo3" target="_blank">
+                    <img src="https://via.placeholder.com/200" alt="Video 3">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="socials">
+            <a href="https://www.instagram.com/deinaccount" target="_blank">Instagram</a> |
+            <a href="https://www.youtube.com/channel/deinaccount" target="_blank">YouTube</a> |
+            <a href="https://www.tiktok.com/@deinaccount" target="_blank">TikTok</a>
+        </div>
+        <p>Kontaktiere mich: <a href="mailto:deinemail@example.com">deinemail@example.com</a></p>
+    </footer>
+</body>
+</html>
