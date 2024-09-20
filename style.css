@@ -16,15 +16,13 @@ body {
 
 header {
     background: #f4f4f4;
-    padding: 2rem 0;
-    margin-bottom: 3rem;
+    padding: 1rem 0;
+    margin-bottom: 30px;
 }
 
 header h1 {
     float: left;
     margin: 0;
-    font-size: 1.5rem;
-    font-weight: normal;
 }
 
 header nav {
@@ -45,61 +43,38 @@ header a {
     text-decoration: none;
 }
 
-.hero, .about, .social-media, .contact {
-    padding: 4rem 0;
+.hero {
+    background: #f4f4f4;
+    padding: 2rem 0;
 }
 
-h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 2rem;
-    text-transform: uppercase;
-}
-
-p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
 }
 
 .cta-button {
     display: inline-block;
     background: #ff6600;
     color: #fff;
-    padding: 12px 24px;
+    padding: 10px 20px;
     text-decoration: none;
-    border-radius: 30px;
-    font-weight: bold;
-    text-transform: uppercase;
+    border-radius: 5px;
 }
 
-.social-media {
-    text-align: center;
+.about, .social-media, .contact {
+    padding: 2rem 0;
 }
 
-.social-images {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.social-images img {
-    width: 150px;
-    height: 150px;
-    margin: 0 10px;
+.social-media img {
+    width: 100%;
+    max-width: 150px;
+    margin: 10px;
 }
 
 form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-label {
-    display: block;
-    margin-bottom: 0.5rem;
+    display: grid;
+    gap: 1rem;
 }
 
 input, textarea {
@@ -109,25 +84,46 @@ input, textarea {
     border-radius: 5px;
 }
 
-textarea {
-    height: 150px;
-}
-
 footer {
     background: #333;
     color: #fff;
-    padding: 2rem 0;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+/* Zusaetzliche Stile basierend auf den Screenshots */
+
+h1, h2 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hero h1, .about h2, .social-media h2, .contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p, .about p, .contact p {
+    margin-bottom: 1rem;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 footer .container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 footer p {
     margin: 0;
-    font-size: 0.9rem;
 }
 
 footer a {
@@ -135,6 +131,16 @@ footer a {
     text-decoration: none;
 }
 
+/* Anpassungen fuer die Schreibweise von Umlauten */
+[lang="de"] {
+    hyphens: auto;
+}
+
+/* Rechtsbuendige und linksbuendige Ausrichtung */
 .text-right {
     text-align: right;
+}
+
+.text-left {
+    text-align: left;
 }
