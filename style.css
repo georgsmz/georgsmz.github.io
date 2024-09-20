@@ -1,0 +1,84 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #1e90ff;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.header .slogan {
+    font-size: 1.5em;
+    margin-top: 10px;
+    color: #e0e0e0;
+}
+
+.header .welcome {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Main Section */
+.main-content {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Photo and Video Gallery */
+.gallery, .videos {
+    margin: 40px 0;
+}
+
+.photos, .video-links {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+.photos img, .video-links img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.photos img:hover, .video-links img:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer .socials {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
