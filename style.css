@@ -64,12 +64,13 @@ h1.welcome { /* Neue Klasse für die Willkommensnachricht */
 
 .image-container {
     position: relative; /* Positionierung für das Bild */
+    margin-bottom: 362px; /* Abstand zwischen Text und Bild */
 }
 
 .profile-image { /* Klasse für das Bild */
-    width: auto; /* Breite automatisch anpassen */
-    height: 100%; /* Höhe anpassen */
-    aspect-ratio: 3 / 4; /* Seitenverhältnis 3:4 */
+    width: 75%; /* Breite anpassen */
+    height: auto; /* Höhe automatisch anpassen */
+    max-height: 300px; /* Maximalhöhe für das Bild */
     position: absolute; /* Absolut positioniert, um hinter der Schrift zu sein */
     left: 50%; /* Zentrierung */
     top: 50%; /* Zentrierung */
@@ -89,5 +90,4 @@ p {
     background: #ff6600;
     color: #fff;
     padding: 12px 24px;
-    text-decoration: none;
-    border-radius: 30px;
+    text-decoration: none
