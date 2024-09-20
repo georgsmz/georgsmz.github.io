@@ -60,12 +60,18 @@ h1.welcome {
     margin-bottom: 20px;
 }
 
-.profile-image {
+..profile-image {
     width: auto; /* Breite auf 405px gesetzt */
     height: auto; /* Höhe auf 536px gesetzt */
-    object-fit: cover; /* Proportionale Darstellung, falls nötig */
-    margin: 0 auto; /* Zentriert das Bild */
+    position: absolute; /* Absolute Positionierung */
+    right: 0; /* Bild an die rechte Seite setzen */
+    top: 50%; /* Vertikal zentrieren */
+    transform: translateY(-50%); /* Vertikal zentrieren, um es perfekt zu positionieren */
+    z-index: -1; /* Hinter allen Texten */
+    object-fit: cover; /* Proportionale Darstellung */
+    margin: 0; /* Kein zusätzlicher Margin */
 }
+
 
 p {
     font-family: Epilogue, sans-serif;
