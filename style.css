@@ -13,7 +13,7 @@ body {
 }
 
 .section-title {
-    font-family: Anton, sans-serif;
+    font-family: Anton;
     font-size: 2rem; /* Kommentar: Schriftgröße auf 2rem geändert */
     font-weight: normal;
     margin-bottom: 2rem;
