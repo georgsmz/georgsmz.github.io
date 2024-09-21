@@ -52,12 +52,9 @@ h2 {
     font-weight: normal; /* Nicht fett */
     margin-bottom: 2rem;
     text-transform: uppercase;
-    text-align: center; /* Zentriert */
+    text-align: left; /* Zentriert */
 }
-.image-container h2 {
-    position: relative; /* Positionierung hinzufügen */
-    left: -560px; /* Verschiebe um 560px nach links */
-}
+
 
 h1.welcome {
     text-align: center;
