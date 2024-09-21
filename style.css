@@ -61,8 +61,8 @@ h1.welcome {
 }
 
 ..profile-image {
-    width: auto; /* Breite auf 405px gesetzt */
-    height: auto; /* Höhe auf 536px gesetzt */
+    width: 405px; /* Breite auf 405px gesetzt */
+    height: 536px; /* Höhe auf 536px gesetzt */
     position: absolute; /* Absolute Positionierung */
     right: 0; /* Bild an die rechte Seite setzen */
     top: 50%; /* Vertikal zentrieren */
